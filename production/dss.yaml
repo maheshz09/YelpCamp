@@ -5,12 +5,12 @@ metadata:
   name: yelp-camp-ground
 type: Opaque
 data:
-  CLOUDINARY_CLOUD_NAME: 
-  CLOUDINARY_KEY: 
-  CLOUDINARY_SECRET: 
-  MAPBOX_TOKEN: 
-  DB_URL: 
-  SECRET: 
+  CLOUDINARY_CLOUD_NAME: dvojsffxf
+  CLOUDINARY_KEY: 591578613813726
+  CLOUDINARY_SECRET: rN_04FUlc0A8Ubjotr1yI7gjNAk
+  MAPBOX_TOKEN: pk.eyJ1IjoibWFubGluZXJvb3QxMiIsImEiOiJjbTY5azE3cHEwYWd4MmpzaDZzdWY0ZTloIn0.o_rEw9K6gZQ21zZ3OIjPyQ
+  DB_URL: mongodb+srv://mdb_sa_id_67977ed572f1a57c5ed16ed2:mdb_sa_sk_PlZH9w8CwPYGrzTXl7UAQoNFRIsC83ur3XouyjFn@3-tier-app.jiy49.mongodb.net/?retryWrites=true&w=majority&appName=3-tier-app
+  SECRET: MAHESH
 
 ---
 apiVersion: apps/v1
@@ -29,7 +29,7 @@ spec:
     spec:
       containers:
         - name: yelp-camp-container
-          image: kanha05/campground:13
+          image: manlineroot12/campground:5
           ports:
             - containerPort: 3000
           env:
